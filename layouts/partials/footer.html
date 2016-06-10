@@ -1,7 +1,7 @@
 <div class="footer">
   {{if isset .Site.Params "FooterMsg"}}
-  <p>{{.Site.Params.FooterMsg}}</p>
+  <p>{{.Site.Params.FooterMsg | safeHTML}}</p>
   {{else}}
-  <p>© 2016 Josta Yeè. Powered by <a href="http://gohugo.io">Hugo</a>. Theme on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
   {{end}}
 </div>
